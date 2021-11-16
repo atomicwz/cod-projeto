@@ -1,0 +1,231 @@
+:root{
+    --cor-primaria: white;
+    --peso-primario: 400;
+    --font-size-h1: 38px;
+}
+
+/* ESTILOS GERAIS  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-size: 18px;
+}
+.container-header{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.section-container{
+    margin: 0 auto;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(180deg, rgba(0,0,0,.3) 0%, rgba(0,0,0,1) 100%), url(/img/bg-header.png) no-repeat center/cover;
+    background-position: center;
+    color: var(--cor-primaria);
+    padding-bottom: 80px;
+}
+.nav-top{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.nav-top ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: var(--peso-primario);
+}
+
+.nav-top input{
+   width: 50%;
+   padding: 17px 10px;
+   border-radius: 8px;
+   border: none;
+   outline: none;
+   background: #c4c4c42a;
+   text-align: center;
+   text-transform: uppercase;
+}
+.nav-top  i{
+    font-size: 24px;
+}
+.play{
+    font-size: 26px;
+    margin: 0 10px 0 15px
+}
+
+/* SECTION 1 */
+
+.section-1{
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 200px;
+}
+.section-1 img{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px 15px;
+}
+.section-1 h1{
+    text-transform: uppercase;
+    font-size: var(--font-size-h1);
+}
+.section-1  p{
+    max-width: 700px;
+    margin:0 auto;
+    font-weight: 300;
+}
+
+.btn-header{
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    margin: 10px auto;
+    align-items: center;
+
+}
+.btn-header .btn-preco a{
+    color: black;
+    background-color: #ffffff;
+    padding: 5px 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn-header .btn-more i{
+    color: black;
+    background-color: #ffffff;
+    padding: 8.6px 6px;
+    border-radius: 5px;
+}
+
+
+                            /* SECTION 2 */
+
+.section-2{
+    background-color: black;
+    color: var(--cor-primaria);
+    border-top: 1px solid #c4c4c41f;
+    padding: 20px 0 20px 0;
+}
+.section-title p{
+    opacity: 38%;
+    font-size: 12px;
+}
+.section-2-item{
+    margin-top: 20px;
+    background: url(/img/section-2/section-2-img.png) no-repeat;
+    width: 362px;
+    height:205px;
+    text-align: center;
+    padding-top: 75px;
+    font-size: 50px;  
+    opacity: 76%;
+    cursor: pointer;
+}
+.section-2-item:hover{
+    opacity: 100%;
+}
+.section-2-item i{
+    background-image:linear-gradient(180deg, rgba(216,216,216,1) 0%, rgba(79,78,77,1) 100%);
+    color: #d8d8d8;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+}
+
+.box-2{
+    display: flex;
+    justify-content: space-between;
+}
+.section-2-box{
+    align-self: flex-end;
+}
+.section-2-box div{
+    background: red;
+    width: 351px;
+    height: 57px;
+    margin-top: 15px;
+    opacity: 76%;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.section-2-box div:hover{
+    opacity: 100%;
+}
+.section-2-box div h6{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.section-2-box .item-1{
+    background: url(/img/section-2/Mass\ Effect.png);
+}
+.section-2-box .item-2{
+    background: url(/img/section-2/Cyber\ Punk.png);
+}
+.section-2-box .item-3{
+    background: url(/img/section-2/BF-2042.png);
+}
+
+
+/* SECTION-3 */
+.section-3{
+    background: black;
+    color: var(--cor-primaria);
+    margin: 0 auto;
+}
+.box-1{
+    margin-top: 20px;
+    display: flex;
+    gap: 17px;
+    overflow-x: scroll;
+    padding: 10px 0;
+
+}
+.box-1::-webkit-scrollbar{
+    background: rgba(255, 255, 255, 0.082);
+    height: 15px;
+    position: absolute;
+}
+.box-1::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+}
+.box-1 p{
+    font-size: 12px;
+    text-align: center;
+}
+.box-1 article div{
+    background: linear-gradient(180deg,rgba(26, 20, 20, 0) 0%,  rgba(31, 31, 31, 0.25) 100%);
+    padding: 10px;
+}
+.box-1 img{
+    width: 171px;
+    margin-bottom: -7px;
+}
+.box-1 article:hover{
+    background: rgba(255, 255, 255, 0.178);
+    transform: scale(1.1);
+}
